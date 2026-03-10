@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout code
@@ -31,8 +33,7 @@ jobs:
         run: ./gradlew assembleRelease --no-daemon
 
       - name: Find and rename APK
-        run: |
-          find app/build/outputs/apk -name "*.apk" -exec cp {} app/build/outputs/apk/release/StreamVault-TV.apk \;
+        run: find app/build/outputs/apk -name "*.apk" -exec cp {} app/build/outputs/apk/release/StreamVault-TV.apk \;
 
       - name: Upload APK as artifact
         uses: actions/upload-artifact@v4
