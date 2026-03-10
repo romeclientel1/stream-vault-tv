@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.StreamVault" parent="@style/Theme.Leanback">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:colorPrimary">#FF4D6D</item>
+    </style>
+</resources>
