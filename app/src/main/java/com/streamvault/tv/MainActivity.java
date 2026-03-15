@@ -51,7 +51,7 @@ public class MainActivity extends Activity {
         settings.setUserAgentString(
             "Mozilla/5.0 (Linux; Android 9; AFT) AppleWebKit/537.36 " +
             "(KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36 " +
-            "StreamVaultTV/1.0 FireTV"
+            "StreamVault/1.0 FireTV"
         );
         CookieManager.getInstance().setAcceptCookie(true);
         CookieManager.getInstance().setAcceptThirdPartyCookies(webView, true);
